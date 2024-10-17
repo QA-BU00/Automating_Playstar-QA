@@ -502,10 +502,10 @@ time.sleep(1)
 actions = ActionChains(driver)
 actions.move_to_element(login_acc)    
 actions.perform()
-login_acc.send_keys("ivan_li")   # 個人使用者帳號
+login_acc.send_keys("*****")   # 個人使用者帳號
 time.sleep(1)
 login_acc.send_keys(Keys.TAB)   # 切換至密碼輸入欄位
-login_pass.send_keys("iPlaystar296")  # 個人密碼
+login_pass.send_keys("*****")  # 個人密碼
 time.sleep(1)
 login_pass.send_keys(Keys.TAB)   # 切換至驗證碼輸入欄位
 verifiCode = driver.find_element(By.XPATH, '//*[@id="captcha_img"]/img')  # 驗證碼圖片元素位置
